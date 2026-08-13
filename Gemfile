@@ -103,4 +103,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+  # Generate JUnit XML reports for CI [https://github.com/sj26/rspec_junit_formatter]
+  gem "rspec_junit_formatter"
 end

@@ -7,8 +7,8 @@
 
 # For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 
-# Make sure RUBY_VERSION matches a valid Ruby Docker tag
-ARG RUBY_VERSION=3.3.0
+# Rails 8.1.2 uses anonymous parameter syntax requiring Ruby >= 3.4
+ARG RUBY_VERSION=3.4.0
 FROM docker.io/library/ruby:$RUBY_VERSION-slim AS base
 
 # Rails app lives here
